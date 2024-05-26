@@ -81,18 +81,16 @@ Behold the reimagined interface showcasing the pinnacle of form management and u
 
 ### Login Page
 
-![Login Page](https://github.com/YourRepo/matrice-assignment/assets/login_page.jpg)
+![Login Page](https://github.com/MKCA06/Matrice/assets/91538092/30b6cccf-9bf1-4d04-931b-d7228beb01a3)
 
 ### Home Page (Landing Page)
 
-![Home Page](https://github.com/YourRepo/matrice-assignment/assets/home_page.jpg)
+![Home Page](https://github.com/MKCA06/Matrice/assets/91538092/100ee3e8-f72a-4e59-9421-0bd0222d88ff)
 
-### Form Page
+### Form
 
-![Form Page](https://github.com/YourRepo/matrice-assignment/assets/form_page.jpg)
+![Form Page](https://github.com/MKCA06/Matrice/assets/91538092/f60718d3-ffbc-4eee-842b-12f74a19fe32)
+
 
 Explore the transformed interface, witness the innovation, and let the future of form management and AI-driven services unfold before your eyes.
 
----
-
-Feel free to replace placeholder links and image paths with actual URLs and paths. This README follows the style of the sample provided and includes relevant details for the Matrice Assignment, highlighting the use of Next.js and the features implemented.
