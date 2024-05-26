@@ -1,154 +1,73 @@
+import { useState } from 'react';
 import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
-import Select from 'react-select';
 import 'react-toastify/dist/ReactToastify.css';
-
-const FormPage = () => {
+  
+export default function Signup() {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
   const router = useRouter();
-  const { id } = router.query;
 
-  useEffect(()=>{
-    const ud=localStorage.getItem('userdetail')
-    if(!ud||ud==''){
-      router.push('/login')
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    if(username==''||password==''||username==' '||password==' '){
+      toast.warn('All fields must be filled')
     }
-   
- })
-  const [formData, setFormData] = useState({
-    name: '',
-    dob: '',
-    color: '',
-    terms: false,
-    rating: 5,
-    languages: []
-  });
+    else{
+      const res = await fetch('/api/signup', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username, password }),
+      });
+      if (res.ok) {
+        router.push('/login');
+      }
+      else{
+        toast.error('Username Already exists')
+      }
 
-  const languageOptions = [
-    { value: 'English', label: 'English' },
-    { value: 'Spanish', label: 'Spanish' },
-    { value: 'French', label: 'French' },
-    { value: 'German', label: 'German' },
-    { value: 'Chinese', label: 'Chinese' },
-    { value: 'Japanese', label: 'Japanese' },
-    // Add more languages as needed
-  ];
-
-  const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: type === 'checkbox' ? checked : value,
-    }));
-  };
-
-  const handleLanguageChange = (selectedOptions) => {
-    setFormData((prevData) => ({
-      ...prevData,
-      languages: selectedOptions || []
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const responses = JSON.parse(localStorage.getItem('responses')) || {};
-    if (!responses[id]) {
-      responses[id] = [];
     }
-    responses[id].push(formData);
-    localStorage.setItem(`responses`, JSON.stringify(responses));
-    toast.success('Form submitted successfully');
-    router.push('/home');
+    
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-indigo-500 to-purple-600 flex items-center justify-center p-4">
-      <ToastContainer />
-      <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
-        <h1 className="text-3xl font-bold mb-6 text-center">Form {id}</h1>
+   <>
+       <ToastContainer />
+     <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 to-purple-600">
+      <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+        <h1 className="text-2xl font-bold mb-6 text-center">Registration Form</h1>
         <form onSubmit={handleSubmit} className="space-y-4">
-          <div>
-            <label className="block text-sm font-medium text-gray-700">Name</label>
-            <input 
-              type="text" 
-              name="name" 
-              value={formData.name} 
-              onChange={handleChange} 
-              className="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" 
-              required
-            />
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700">Date of Birth</label>
-            <input 
-              type="date" 
-              name="dob" 
-              value={formData.dob} 
-              onChange={handleChange} 
-              className="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" 
-              required
-            />
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700">Favorite Color</label>
-            <select 
-              name="color" 
-              value={formData.color} 
-              onChange={handleChange} 
-              className="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" 
-              required
-            >
-              <option value="" disabled>Select a color</option>
-              <option value="Red">Red</option>
-              <option value="Blue">Blue</option>
-              <option value="Green">Green</option>
-            </select>
-          </div>
-          <div className="flex items-center">
-            <input 
-              type="checkbox" 
-              name="terms" 
-              checked={formData.terms} 
-              onChange={handleChange} 
-              className="h-4 w-4 text-indigo-600 border-gray-300 rounded" 
-              required
-            />
-            <label className="ml-2 block text-sm text-gray-900">Accept Terms</label>
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700">Rating</label>
-            <input 
-              type="range" 
-              name="rating" 
-              min="1" 
-              max="10" 
-              value={formData.rating} 
-              onChange={handleChange} 
-              className="mt-1 w-full" 
-            />
-            <div className="text-center mt-2 text-gray-700">{formData.rating}</div>
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700">Languages You Speak</label>
-            <Select 
-              isMulti 
-              name="languages" 
-              options={languageOptions} 
-              value={formData.languages} 
-              onChange={handleLanguageChange} 
-              className="mt-1"
-            />
-          </div>
+          <input 
+            type="text" 
+            placeholder="Username" 
+            value={username} 
+            onChange={(e) => setUsername(e.target.value)} 
+            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <input 
+            type="password" 
+            placeholder="Password" 
+            value={password} 
+            onChange={(e) => setPassword(e.target.value)} 
+            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
           <button 
             type="submit" 
-            className="w-full px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition duration-300"
+            className="w-full px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300"
           >
-            Submit
+            Register
+          </button>
+          <button 
+            type="button" 
+            onClick={() => router.push('/login')} 
+            className="w-full px-4 py-2 mt-2 text-blue-700 hover:text-blue-800 transition duration-300"
+          >
+            Already have an account? Login
           </button>
         </form>
       </div>
     </div>
+    </>
+   
   );
-};
-
-export default FormPage;
+}
