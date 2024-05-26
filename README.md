@@ -51,9 +51,6 @@ Immerse yourself in a guided tour of the platform through our Loom video. Follow
 ✅ **Form Management:** Home page to add new forms and display existing forms with options to enable or disable them.\
 ✅ **Response Visualization:** Visualize responses similar to Google Form for easy analysis.
 
-## ⏱ Lightning-Fast Performance
-
-Experience lightning-fast load times and optimized performance across devices. The platform is built to ensure a smooth and efficient user experience.
 
 ## 🛠️ Implementation Guide
 
