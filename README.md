@@ -26,29 +26,18 @@ Access the Figma file to delve into the design details and user interface. Witne
 
 🔗 [Figma File](https://www.figma.com/file/Example/Agency-Operations-Services?type=design&node-id=0%3A1&mode=design)
 
-### 📖 Documentation
-
-Unlock the full potential of the platform with comprehensive documentation. This guide covers installation, features, and best practices to make your experience seamless.
-
-📚 [Documentation](https://docs.agency-operations-services.example.com/)
 
 ### 🎥 Loom Video
 
 Immerse yourself in a guided tour of the platform through our Loom video. Follow along as we showcase key features, share tips, and provide insights to enhance your experience.
 
-📹 [Loom Video](https://www.loom.com/share/example)
+📹 [Loom Video](https://www.loom.com/share/3ef0af82c71c4316a9b090aa3c0889c4?sid=943f5ef6-88a6-4c69-a8ef-33ecb6d74efd)
 
 ## 🚀 Technological Marvels
 
 ![Next.js](https://img.shields.io/badge/next.js-%23000000.svg?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-## ⚙️ Power-Packed Dependencies
-
-- **_axios_**
-- **_react-router-dom_**
-- **_formik_**
-- **_yup_**
 
 ## 👨‍💻 Astonishing Features
 
@@ -88,15 +77,15 @@ Behold the reimagined interface showcasing the pinnacle of agency operations man
 
 ### Login Page
 
-![Login Page](path/to/login_page.jpg)
+![Login Page](https://github.com/MKCA06/Matrice/assets/91538092/30b6cccf-9bf1-4d04-931b-d7228beb01a3)
 
-### Actual Page
+### Home Page (Landing Page)
 
-![Actual Page](path/to/actual_page.jpg)
+![Actual Page](https://github.com/MKCA06/Matrice/assets/91538092/100ee3e8-f72a-4e59-9421-0bd0222d88ff)
 
-### Account Creation Page
+### Form
 
-![Account Creation Page](path/to/fourth_page.jpg)
+![Account Creation Page](https://github.com/MKCA06/Matrice/assets/91538092/f60718d3-ffbc-4eee-842b-12f74a19fe32)
 
 Explore the transformed interface, witness the innovation, and let the future of agency operations unfold before your eyes.
 
