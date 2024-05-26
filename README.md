@@ -24,7 +24,7 @@ Explore additional resources to enhance your understanding and experience with t
 
 Access the Figma file to delve into the design details and user interface. Witness the thought process behind every pixel and see the design evolution.
 
-🔗 [Figma File](https://www.figma.com/file/Example/Matrice-Assignment?type=design&node-id=0%3A1&mode=design)
+🔗 [Figma File](https://www.figma.com/design/t054a9cPqtgEPbepbWzlM5/Matrice.Ai?node-id=0-1&t=f5uspVLTdf0TlYMn-1)
 
 ### 🎥 Loom Video
 
