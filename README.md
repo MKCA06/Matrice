@@ -1,31 +1,30 @@
-# 🏢 Agency Operations Services Platform
+# 🧠 Matrice Assignment
 
 ## 🚀 Introduction
 
-Welcome to the Agency Operations Services Platform, a cutting-edge solution built with Next.js to streamline your interactions with various agency services. This platform offers a user-friendly interface and robust functionality, designed to enhance your management and inquiry processes.
+Welcome to the Matrice Assignment, a prototype of a Google Form-like application built with Next.js. This project showcases the implementation of a dynamic form creation system coupled with a robust user authentication system. The platform is designed to deliver a seamless and professional user experience.
 
 ## 🎨 User Interface and Theme Overhaul
 
-Experience a modern and intuitive UI, meticulously designed to enhance usability and aesthetics. The platform's layout and color scheme are crafted to provide clarity and ease of use.
+Experience a sleek and professional UI, meticulously designed to enhance usability and aesthetics. The platform's layout and color scheme are crafted to provide clarity and ease of use, ensuring a seamless interaction for all users.
 
 ## 👨‍💻 Explore Live Demo
 
-<a href="https://github.com/YourRepo/agency-operations-services" target="blank">
+<a href="https://github.com/YourRepo/matrice-assignment" target="blank">
 <img src="https://img.shields.io/website?url=https://www.example.com&logo=github&style=flat-square" />
 </a>
 
-🌐 Embark on a journey of exploration: [Agency Operations Services Platform](https://next-form-zeta.vercel.app/signup)
+🌐 Embark on a journey of exploration: [Matrice Assignment Live Demo](https://next-form-zeta.vercel.app/signup)
 
 ## 🌟 Additional Resources
 
-Explore additional resources to enhance your understanding and experience with the Agency Operations Services Platform:
+Explore additional resources to enhance your understanding and experience with the Matrice Assignment:
 
 ### 🖌 Figma File
 
 Access the Figma file to delve into the design details and user interface. Witness the thought process behind every pixel and see the design evolution.
 
-🔗 [Figma File](https://www.figma.com/file/Example/Agency-Operations-Services?type=design&node-id=0%3A1&mode=design)
-
+🔗 [Figma File](https://www.figma.com/file/Example/Matrice-Assignment?type=design&node-id=0%3A1&mode=design)
 
 ### 🎥 Loom Video
 
@@ -38,14 +37,19 @@ Immerse yourself in a guided tour of the platform through our Loom video. Follow
 ![Next.js](https://img.shields.io/badge/next.js-%23000000.svg?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-
 ## 👨‍💻 Astonishing Features
 
-✅ Secure login with robust authentication mechanisms.\
-✅ Comprehensive inquiry system for agency services.\
-✅ User-friendly account creation process.\
-✅ Real-time data updates and notifications.\
-✅ Intuitive and responsive design for seamless interaction.
+### User Authentication System
+✅ **Secure Signup/Signin:** Users can sign up and sign in with a username and password.\
+✅ **Server-Side Authentication:** The authentication process is securely handled on the server side without using any third-party packages.\
+✅ **Protected Routes:** Routes are protected with server-side rendering to ensure secure access.
+
+### Dynamic Google Form Implementation
+✅ **Field Support:** Supports Text field, Date field, MultiSelect Dropdowns, Single Select Dropdowns, Checkbox, and a Linear Scale with min and max options.\
+✅ **Dynamic Form Creation:** Forms can be dynamically generated and customized using the supported fields.\
+✅ **Form Data Recording:** User responses are recorded and stored in localStorage for easy retrieval.\
+✅ **Form Management:** Home page to add new forms and display existing forms with options to enable or disable them.\
+✅ **Response Visualization:** Visualize responses similar to Google Form for easy analysis.
 
 ## ⏱ Lightning-Fast Performance
 
@@ -53,7 +57,7 @@ Experience lightning-fast load times and optimized performance across devices. T
 
 ## 🛠️ Implementation Guide
 
-Intrigued? Dive into the future of agency operations management with the Agency Operations Services Platform:
+Intrigued? Dive into the future of AI-driven services with the Matrice Assignment:
 
 ### `npm install`
 
@@ -73,22 +77,22 @@ Start the production build locally. Ensure the build step is completed before ru
 
 ## 🌟 Unveiling the Project Output
 
-Behold the reimagined interface showcasing the pinnacle of agency operations management.
+Behold the reimagined interface showcasing the pinnacle of form management and user interaction.
 
 ### Login Page
 
-![Login Page](https://github.com/MKCA06/Matrice/assets/91538092/30b6cccf-9bf1-4d04-931b-d7228beb01a3)
+![Login Page](https://github.com/YourRepo/matrice-assignment/assets/login_page.jpg)
 
 ### Home Page (Landing Page)
 
-![Actual Page](https://github.com/MKCA06/Matrice/assets/91538092/100ee3e8-f72a-4e59-9421-0bd0222d88ff)
+![Home Page](https://github.com/YourRepo/matrice-assignment/assets/home_page.jpg)
 
-### Form
+### Form Page
 
-![Account Creation Page](https://github.com/MKCA06/Matrice/assets/91538092/f60718d3-ffbc-4eee-842b-12f74a19fe32)
+![Form Page](https://github.com/YourRepo/matrice-assignment/assets/form_page.jpg)
 
-Explore the transformed interface, witness the innovation, and let the future of agency operations unfold before your eyes.
+Explore the transformed interface, witness the innovation, and let the future of form management and AI-driven services unfold before your eyes.
 
 ---
 
-Feel free to replace placeholder links and image paths with actual URLs and paths. This README follows the style of the sample provided and includes relevant details for the Agency Operations Services Platform, now highlighting the use of Next.js.
+Feel free to replace placeholder links and image paths with actual URLs and paths. This README follows the style of the sample provided and includes relevant details for the Matrice Assignment, highlighting the use of Next.js and the features implemented.
